@@ -6,5 +6,10 @@
   align-items: center;
   height: 100vh;
   border: 2px solid green;
+  font-size: 35px;
 }
 
+button {
+  padding: 5px;
+  font-size: 20px;
+}
