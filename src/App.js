@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
+import Hello from './Hello';
 
 function App() {
 
@@ -11,6 +12,7 @@ const [count, setCount] = useState(0)
       <button onClick={ () => {
         setCount( count + 1 )
       }}>Click Me!</button>
+      <Hello />
     </div>
   );
 }
