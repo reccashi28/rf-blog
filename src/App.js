@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import './App.css';
-import Hello from './Hello';
 import Navigator from './components/Navigator/Navigator';
 import Content from './components/Content/Content';
 
@@ -23,7 +22,6 @@ const [blogs, setBlogs] = useState([
       <button onClick={ () => {
         setCount( count + 1)
       }}> Click me!</button>
-      <Hello />
     </div>
   );
 }
