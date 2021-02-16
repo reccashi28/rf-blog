@@ -1,5 +1,5 @@
 import './content.css';
-// import BlogsList from './BlogsLists/BlogsList';
+import BlogsList from '../BlogsList/BlogsList';
 
 const Content = ({blogs}) => {
 
@@ -9,7 +9,7 @@ console.log(blogs);
             <h1>{blogs[0].title}</h1>
             <h5>hello</h5>
             <h5>hello</h5>
-            {/* <BlogsList blogs={blogs} /> */}
+            <BlogsList  blogs={blogs}/>
         </div>
     );
 }

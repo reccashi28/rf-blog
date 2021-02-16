@@ -1,9 +1,9 @@
 const BlogsList = ({blogs}) => {
-    console.log(blogs)
+    // console.log(blogs)
     return(
         <div>
-            <p>{blogs[1].title}</p>
-            <h1>hello</h1>
+            <h2>{blogs[1].title}</h2>
+            <p>{blogs[1].content}</p>
         </div>
     );
 }
