@@ -1,9 +1,16 @@
+
 const BlogsList = ({blogs}) => {
     // console.log(blogs)
     return(
         <div>
-            <h2>{blogs[1].title}</h2>
-            <p>{blogs[1].content}</p>
+           { blogs.map( (blog) => (
+               <div className="bloglist-content">
+                    <h5>{blog.title}</h5>
+                    <p>{blog.content}</p>
+                    <button>Delete</button>
+               </div>
+                
+            )) }
         </div>
     );
 }
