@@ -17,4 +17,18 @@ code {
 }
 .bloglist-content {
   padding: 1em;
+  width: 100%;
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.blogpost-title {
+  color: lightcoral;
+}
+
+
+.delete-post {
+  align-self: center;
+  cursor: pointer;
 }
