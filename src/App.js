@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Navigator from './components/Navigator/Navigator';
 import Content from './components/Content/Content';
@@ -14,10 +14,15 @@ const [blogs, setBlogs] = useState([
   {title: "Health", content: "3. Arrays of objects don't stay the same all the time.", author: "john", id: 3},
 ]);
 
+const handleDelete = (id) => {
+  const newBlogsList = blogs.filter( blog => blog.id !== id);
+  setBlogs(newBlogsList);
+}
+
   return (
     <div className="App">
       <Navigator />
-      <Content blogs={blogs} />
+      <Content blogs={blogs} handleDelete={handleDelete} />
       {/* <p>You clicked the button {count} times</p>
       <button onClick={ () => {
         setCount( count + 1)

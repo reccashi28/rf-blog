@@ -5,8 +5,9 @@ const Navigator = () => {
         <nav className="navigator">
             <ul className="navigation-ul">
                 <li>Home</li>
-                <li>News Feed</li>
-                <li>Posts</li>
+                <li>New Blog</li>
+                <li>Contact</li>
+
             </ul>
         </nav>
     )
