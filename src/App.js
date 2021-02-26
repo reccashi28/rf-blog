@@ -2,6 +2,12 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import Navigator from './components/Navigator/Navigator';
 import Content from './components/Content/Content';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router";
 
 
 
