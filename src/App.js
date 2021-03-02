@@ -2,12 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import Navigator from './components/Navigator/Navigator';
 import Content from './components/Content/Content';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router";
+import Home from './components/Home';
 
 
 
@@ -36,6 +31,7 @@ const handleDelete = (id) => {
   return (
     <div className="App">
       <Navigator />
+      <Home />
       <Content blogs={blogs} handleDelete={handleDelete} />
       {/* <p>You clicked the button {count} times</p>
       <button onClick={ () => {
