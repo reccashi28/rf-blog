@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import Navigator from './components/Navigator/Navigator';
 import Content from './components/Content/Content';
-import Home from './components/Home';
-
+import Home from './components/Home/Home';
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 
 function App() {
@@ -29,15 +29,13 @@ const handleDelete = (id) => {
 }
 
   return (
-    <div className="App">
-      <Navigator />
-      <Home />
-      <Content blogs={blogs} handleDelete={handleDelete} />
-      {/* <p>You clicked the button {count} times</p>
-      <button onClick={ () => {
-        setCount( count + 1)
-      }}> Click me!</button> */}
-    </div>
+    <Router>
+      <div className="App">
+        <Navigator  />
+        <Home path="/" component={Home} />
+        <Content path="/blogs" component={Content} blogs={blogs} handleDelete={handleDelete}  />
+      </div>
+    </Router>
   );
 }
 
