@@ -1,6 +1,4 @@
 .App {
-  display: flex;
-  justify-content: center;
   font-size: 35px;
   position: relative;
 }
@@ -33,9 +31,45 @@ button {
   text-decoration: underline;
 }
 
-/* ---- content style ------ */
+/* ---- blogs style ------ */
 
 .content-title {
-  margin-top: 50px;
-  width: 90%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+/* ---- home component ----- */
+.home {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* --- blog list component --- */
+
+.bloglist-content:hover {
+  box-shadow: 11px 16px 16px -6px rgba(0,0,0,0.27);
+}
+.bloglist-content {
+  /* margin: 0 1rem; */
+  padding: 0 1rem;
+  width: 100%;
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.blogpost-title {
+  color: lightcoral;
+}
+.blog {
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.delete-post {
+  align-self: center;
+  cursor: pointer;
 }

@@ -33,8 +33,12 @@ const handleDelete = (id) => {
       <div className="App">
         <Navigator  />
           <Switch>
-            <Route path="/" component={Home}>  </Route>
-            <Content path="/blogs" component={Content} blogs={blogs} handleDelete={handleDelete}  />
+            <Route path="/" exact>
+              <Home />
+            </Route>
+            <Route path="/blogs" exact > 
+              <Content blogs={blogs} handleDelete={handleDelete}  />
+            </Route>
           </Switch>
       </div>
     </Router>
