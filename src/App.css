@@ -1,13 +1,8 @@
 .App {
   display: flex;
-  /* flex-direction: column; */
-  /* text-align: center; */
   justify-content: center;
-  /* align-items: center; */
-  height: 100vh;
-  /* border: 2px solid green; */
   font-size: 35px;
-  padding-top: 4rem;
+  position: relative;
 }
 
 button {
@@ -16,6 +11,31 @@ button {
   margin-left: 1rem;
 }
 
-.home {
-  position: absolute;
+/* -------- navigation style -------- */
+.navigator {
+  height: 10vh;
+  width: 100%;
+  /* background-color: green; */
+}
+
+.navigation-ul {
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-ul li {
+  list-style-type: none;
+  cursor: pointer;
+  padding: 0 1rem;
+}
+
+.navigation-ul li:hover {
+  text-decoration: underline;
+}
+
+/* ---- content style ------ */
+
+.content-title {
+  margin-top: 50px;
+  width: 90%;
 }

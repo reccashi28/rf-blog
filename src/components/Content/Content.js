@@ -1,4 +1,3 @@
-import './content.css';
 import BlogsList from '../BlogsList/BlogsList';
 
 const Content = ({blogs, handleDelete}) => {

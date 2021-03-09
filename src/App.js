@@ -3,7 +3,7 @@ import './App.css';
 import Navigator from './components/Navigator/Navigator';
 import Content from './components/Content/Content';
 import Home from './components/Home/Home';
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 
 function App() {
@@ -32,8 +32,10 @@ const handleDelete = (id) => {
     <Router>
       <div className="App">
         <Navigator  />
-        <Home path="/" component={Home} />
-        <Content path="/blogs" component={Content} blogs={blogs} handleDelete={handleDelete}  />
+          <Switch>
+            <Route path="/" component={Home}>  </Route>
+            <Content path="/blogs" component={Content} blogs={blogs} handleDelete={handleDelete}  />
+          </Switch>
       </div>
     </Router>
   );

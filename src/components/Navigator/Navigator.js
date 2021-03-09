@@ -1,4 +1,3 @@
-import './navigator.css';
 
 const Navigator = () => {
     return(
