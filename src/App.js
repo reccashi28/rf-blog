@@ -4,6 +4,7 @@ import Navigator from './components/Navigator/Navigator';
 import Content from './components/Content/Content';
 import Home from './components/Home/Home';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import Contact from './components/Contact/Contact';
 
 
 function App() {
@@ -38,6 +39,9 @@ const handleDelete = (id) => {
             </Route>
             <Route path="/blogs" exact > 
               <Content blogs={blogs} handleDelete={handleDelete}  />
+            </Route>
+            <Route path="/contact">
+              <Contact />
             </Route>
           </Switch>
       </div>
