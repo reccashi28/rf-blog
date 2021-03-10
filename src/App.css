@@ -24,7 +24,7 @@ button {
 .link {
   list-style-type: none;
   cursor: pointer;
-  padding: 0 1rem;
+  padding: 1rem;
   text-decoration: none;
   color: black;
 }
@@ -74,4 +74,12 @@ button {
 .delete-post {
   align-self: center;
   cursor: pointer;
+}
+
+/* ------ create blog ------ */
+
+.create-blog {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }

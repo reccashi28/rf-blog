@@ -6,7 +6,7 @@ const Navigator = () => {
             <div className="navigation-ul">
                 <Link className="link" to="/">Home</Link>
                 <Link className="link" to="/blogs">Blogs</Link>
-                <Link className="link" to="/create">New Blog</Link>
+                <Link className="link" to="/create">Create Blog</Link>
                 <Link className="link" to="/contact">Contact</Link>
             </div>
         </nav>
