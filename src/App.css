@@ -13,20 +13,23 @@ button {
 .navigator {
   height: 10vh;
   width: 100%;
+  background-color: gray;
   /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navigation-ul {
   display: flex;
-  justify-content: center;
 }
 
 .link {
   list-style-type: none;
   cursor: pointer;
-  padding: 1rem;
+  padding: 0 1rem;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .link:hover {
@@ -46,6 +49,13 @@ button {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: #F6F6F6;
+  height: 80vh;
+  margin: 2rem auto auto auto;
+  width: 90%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 3px -1px #000000; 
+  box-shadow: 0px 0px 3px -1px #000000;
 }
 
 /* --- blog list component --- */
