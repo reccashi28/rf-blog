@@ -21,14 +21,15 @@ button {
   justify-content: center;
 }
 
-.navigation-ul li {
+.link {
   list-style-type: none;
   cursor: pointer;
   padding: 0 1rem;
   text-decoration: none;
+  color: black;
 }
 
-.navigation-ul li:hover {
+.link:hover {
   text-decoration: underline;
 }
 
