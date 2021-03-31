@@ -10,12 +10,6 @@ import CreateBlog from './components/CreateBlog/CreateBlog';
 
 function App() {
 
-// const [count, setCount] = useState(0)
-// const [blogs, setBlogs] = useState([
-//   {title: "Paradise on Earth", content: "1. Arrays of objects don't stay the same all the time.", author: "peter", id: 1},
-//   {title: "Eternal Life", content: "2. Arrays of objects don't stay the same all the time.", author: "john", id: 2},
-//   {title: "Health", content: "3. Arrays of objects don't stay the same all the time.", author: "john", id: 3},
-// ]);
 
 const [blogs, setBlogs] = useState([]);
 
@@ -23,6 +17,9 @@ useEffect( () => {
   fetch('https://jsonplaceholder.typicode.com/posts')
   .then(response => response.json())
   .then(data => setBlogs(data))
+  .catch( (e) => {
+    console.log(e);
+  })
 }, []);
 
 const handleDelete = (id) => {
